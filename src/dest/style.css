@@ -417,6 +417,7 @@ a {
 	background-color:#3c5499;
 	color:#fff;
 	padding: 120px 170px 130px 170px;
+	border-bottom:dashed #344b8e 1px;
 }
 #contact > h1{
 	text-align:center;
@@ -497,11 +498,18 @@ a {
 .required:focus +label{
 	display:none;
 }
+.required:valid +label{
+	display:none;
+}
+
 .message + label:after{
 	content:'*';
 	color:red;
 }
 .message:focus +label{
+	display:none;
+}
+.message:valid +label{
 	display:none;
 }
 .message{
